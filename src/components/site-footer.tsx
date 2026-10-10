@@ -15,8 +15,7 @@ export function SiteFooter() {
         <div className="flex flex-col gap-6 border-b border-white/10 pb-10 md:flex-row md:items-center md:justify-between">
           <Logo tone="dark" className="h-12" />
           <p className="max-w-[38ch] text-white/70 md:text-right">
-            {site.tagline} Site grading, concrete, asphalt, and grounds infrastructure for the
-            properties MintClean already maintains.
+            {site.tagline} {site.description}
           </p>
         </div>
 

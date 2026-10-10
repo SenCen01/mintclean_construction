@@ -6,51 +6,52 @@ import { RoleCard } from "@/components/careers/role-card";
 import { IconTile } from "@/components/icon-tile";
 import { Reveal, StaggerGroup, StaggerItem } from "@/components/motion/reveal";
 import { heroImages, serviceImages } from "@/lib/images";
+import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Careers",
   description:
-    "Field roles with MintClean Civil Construction — steady, local work across Metro Vancouver.",
+    "Landscape construction field roles with Mint Landscape — steady, local work across Vancouver, the North Shore, and the Sea to Sky Corridor.",
 };
 
 const whyUs = [
   {
     icon: CalendarCheck,
-    title: "Steady, year-round work",
-    body: "Our client base is the same commercial and strata portfolio MintClean already services, so the work doesn't disappear between big projects.",
+    title: "Steady, varied work",
+    body: "From spring planting season through design-build and winter maintenance, there's always a project in motion.",
   },
   {
     icon: MapPin,
     title: "Local jobs, not camps",
-    body: "Our sites are across Metro Vancouver. You go home at the end of the day — no fly-in camp rotations.",
+    body: "Our sites are across Vancouver, the North Shore, and the Sea to Sky Corridor. You go home at the end of the day.",
   },
   {
     icon: ShieldCheck,
-    title: "Safety-first culture",
-    body: "WorkSafeBC-registered safety program, proper PPE, and site supervisors who take hazard assessments seriously.",
+    title: "Craft-first culture",
+    body: "You'll work alongside horticulturists and skilled tradespeople who care about getting it right, with proper safety practices on every site.",
   },
 ];
 
 const roles = [
   {
-    title: "Concrete Finisher",
+    title: "Hardscape Installer",
     type: "Full-time",
-    summary: "Flatwork finishing for sidewalks, curbs, pads, and parkade ramps on commercial sites.",
+    summary: "Paver, natural stone, and retaining wall installation across residential and commercial sites.",
   },
   {
-    title: "Labourer / Groundskeeper",
+    title: "Irrigation Technician",
     type: "Full-time",
-    summary: "General site labour, traffic control, and groundskeeping support across active job sites.",
+    summary: "Installation, troubleshooting, and seasonal start-up and winterization of irrigation and lighting systems.",
   },
   {
-    title: "Site Supervisor",
+    title: "Crew Lead / Foreman",
     type: "Full-time",
-    summary: "Day-to-day oversight of crews, scheduling, and safety compliance on commercial civil sites.",
+    summary: "Day-to-day oversight of crews, scheduling, and quality on active landscape construction builds.",
   },
   {
-    title: "Class 1 / CDL Driver",
-    type: "Seasonal — winter",
-    summary: "Snow-plow and de-icing routes for commercial lots during winter contract season.",
+    title: "Horticulturist / Gardener",
+    type: "Full-time",
+    summary: "Planting, soil work, and garden bed care across residential, strata, and commercial properties.",
   },
 ];
 
@@ -59,8 +60,8 @@ export default function CareersPage() {
     <>
       <PageHero
         eyebrow="Careers"
-        title="Build the ground floor of a new MintClean division."
-        description="We're hiring field crews for commercial and strata sitework across Metro Vancouver — backed by the stability of an established company."
+        title="Build outdoor spaces people love, with a team that cares about craft."
+        description="We're hiring landscape construction crews across Vancouver, the North Shore, and the Sea to Sky Corridor."
         image={heroImages.careers}
       />
 
@@ -92,8 +93,8 @@ export default function CareersPage() {
               icon={HardHat}
               title="Equipment Operator"
               type="Full-time — featured"
-              summary="Excavator, skid steer, and compact loader operation for grading, trenching, and site-prep work across Metro Vancouver commercial sites."
-              image={serviceImages["grading-excavation"]}
+              summary="Skid steer and mini-excavator operation for grading, retaining wall base prep, and site work across BC properties."
+              image={serviceImages["retaining-walls"]}
             />
           </Reveal>
 
@@ -108,7 +109,7 @@ export default function CareersPage() {
           <p className="mt-10 text-[15px] text-muted-foreground">
             Don&apos;t see a fit?{" "}
             <a
-              href="mailto:careers@mintclean.ca?subject=General%20Application%20-%20Civil%20Construction"
+              href={`mailto:${site.email}?subject=General%20Application`}
               className="font-semibold text-primary hover:underline"
             >
               Send us your resume anyway

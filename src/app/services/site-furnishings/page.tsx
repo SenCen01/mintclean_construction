@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ServiceDetailView } from "@/components/services/service-detail";
 import { servicesData } from "../services-data";
 
-const service = servicesData.find((s) => s.slug === "concrete")!;
+const service = servicesData.find((s) => s.slug === "site-furnishings")!;
 
 export const metadata: Metadata = {
   title: service.label,

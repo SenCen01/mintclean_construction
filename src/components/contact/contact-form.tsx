@@ -14,7 +14,6 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { serviceLinks } from "@/lib/site";
 
 export function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
@@ -32,7 +31,7 @@ export function ContactForm() {
         </IconTile>
         <h2 className="font-heading text-xl font-bold">Thanks — we&apos;ll follow up shortly.</h2>
         <p className="text-muted-foreground">
-          A member of the MintClean Civil team will be in touch to discuss your project.
+          A member of the MintClean team will be in touch to discuss your property.
         </p>
       </div>
     );
@@ -46,46 +45,37 @@ export function ContactForm() {
           <Input id="name" name="name" required autoComplete="name" />
         </div>
         <div className="flex flex-col gap-1.5">
-          <Label htmlFor="company">Company / property name</Label>
-          <Input id="company" name="company" autoComplete="organization" />
+          <Label htmlFor="email">Email address</Label>
+          <Input id="email" name="email" type="email" required autoComplete="email" />
         </div>
       </div>
 
       <div className="grid gap-5 sm:grid-cols-2">
         <div className="flex flex-col gap-1.5">
-          <Label htmlFor="email">Email</Label>
-          <Input id="email" name="email" type="email" required autoComplete="email" />
-        </div>
-        <div className="flex flex-col gap-1.5">
-          <Label htmlFor="phone">Phone</Label>
+          <Label htmlFor="phone">Phone number</Label>
           <Input id="phone" name="phone" type="tel" autoComplete="tel" />
         </div>
+        <div className="flex flex-col gap-1.5">
+          <Label htmlFor="propertyType">Property type</Label>
+          <Select name="propertyType">
+            <SelectTrigger id="propertyType" className="h-11 w-full rounded-sm">
+              <SelectValue placeholder="Select property type" />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value="residential">Residential</SelectItem>
+              <SelectItem value="commercial">Commercial</SelectItem>
+            </SelectContent>
+          </Select>
+        </div>
       </div>
 
       <div className="flex flex-col gap-1.5">
-        <Label htmlFor="service">Service you&apos;re interested in</Label>
-        <Select name="service">
-          <SelectTrigger id="service" className="h-11 w-full rounded-sm">
-            <SelectValue placeholder="Select a service" />
-          </SelectTrigger>
-          <SelectContent>
-            {serviceLinks.map((s) => (
-              <SelectItem key={s.href} value={s.href}>
-                {s.label}
-              </SelectItem>
-            ))}
-            <SelectItem value="other">Something else</SelectItem>
-          </SelectContent>
-        </Select>
-      </div>
-
-      <div className="flex flex-col gap-1.5">
-        <Label htmlFor="message">Project details</Label>
-        <Textarea id="message" name="message" rows={5} placeholder="Tell us about the site and the work you need done." />
+        <Label htmlFor="message">Project description</Label>
+        <Textarea id="message" name="message" rows={5} placeholder="Tell us about your property and the work you'd like done." />
       </div>
 
       <Button type="submit" size="lg" className="mt-2 h-12 w-full rounded-sm text-base sm:w-fit sm:px-8">
-        Request a quote
+        Get a Quote
       </Button>
     </form>
   );

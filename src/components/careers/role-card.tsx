@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import { site } from "@/lib/site";
 
 export function RoleCard({
   title,
@@ -9,7 +10,7 @@ export function RoleCard({
   type: string;
   summary: string;
 }) {
-  const mailto = `mailto:careers@mintclean.ca?subject=${encodeURIComponent(
+  const mailto = `mailto:${site.email}?subject=${encodeURIComponent(
     `Application - ${title}`,
   )}`;
 

@@ -22,11 +22,11 @@ const archivo = Archivo({
 
 export const metadata: Metadata = {
   title: {
-    default: "MintClean Civil Construction | Site Grading, Concrete & Asphalt in Metro Vancouver",
+    default: "MintClean Civil Construction | Landscape Construction in BC",
     template: "%s | MintClean Civil Construction",
   },
   description:
-    "The civil construction division of MintClean. Site grading, concrete flatwork, asphalt paving, drainage, and grounds infrastructure for commercial properties and strata across Metro Vancouver, BC.",
+    "Skilled across every discipline of landscape construction — turf, retaining walls, woodworking, natural stone, irrigation, and more — serving Vancouver, the North Shore, and the Sea to Sky Corridor.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

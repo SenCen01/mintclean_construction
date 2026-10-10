@@ -132,7 +132,7 @@ export function ServiceDetailView({ service }: { service: ServiceDetail }) {
             href="/contact"
             className="inline-flex h-12 shrink-0 items-center justify-center gap-2 bg-primary px-6 text-base font-bold text-primary-foreground transition-colors hover:bg-primary/85"
           >
-            Request a quote
+            Get a Quote
             <ArrowRight className="size-4" aria-hidden />
           </Link>
         </Reveal>

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, HardHat, ShieldCheck, Users } from "lucide-react";
+import { ArrowRight, MapPin, ShieldCheck, Sprout } from "lucide-react";
 import { IconTile } from "@/components/icon-tile";
 import { ParallaxImage } from "@/components/motion/parallax-image";
 import { Reveal, StaggerGroup, StaggerItem } from "@/components/motion/reveal";
@@ -9,19 +9,19 @@ import { serviceLinks, site } from "@/lib/site";
 
 const trustPoints = [
   {
-    icon: Users,
-    title: "One accounts team",
-    body: "The MintClean contacts your property already works with coordinate the civil side too.",
+    icon: Sprout,
+    title: "In-house horticulturists & craftsmen",
+    body: "Our construction team and in-house horticulturists are driven by a genuine love of design — creating and building is where their passion finds its fullest expression.",
   },
   {
     icon: ShieldCheck,
-    title: "Same office, same standards",
-    body: `Based out of ${site.address.line1}, alongside the rest of MintClean.`,
+    title: "Honest, no-shortcuts craft",
+    body: "We do not cut corners, we do not overstate what we can deliver, and we do not walk away until the work is something we're proud to put our name to.",
   },
   {
-    icon: HardHat,
-    title: "WorkSafeBC-registered crews",
-    body: "Licensed, insured, and run under the same safety standards as every MintClean site.",
+    icon: MapPin,
+    title: "Rooted in British Columbia",
+    body: "Built on craft, honesty, and a genuine love for the land we work with — across Vancouver, the North Shore, and beyond.",
   },
 ];
 
@@ -49,14 +49,15 @@ export default function Home() {
             </Reveal>
             <Reveal delay={0.08}>
               <h1 className="font-heading mt-5 text-4xl leading-[1.03] font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
-                Civil construction from the team that already maintains your property.
+                We craft spaces that endure.
               </h1>
             </Reveal>
             <Reveal delay={0.16}>
               <p className="mt-6 text-lg text-white/75">
-                MintClean Civil Construction handles the sitework indoor maintenance can&apos;t:
-                grading, concrete, asphalt, and drainage for commercial buildings, strata
-                corporations, and developments across Metro Vancouver.
+                Skilled across every discipline of landscape construction, we bring vision, depth,
+                and permanence to your property — from full-scale renovations and new residential
+                builds to commercial developments, public spaces, and strata or multi-family
+                projects.
               </p>
             </Reveal>
             <Reveal delay={0.24}>
@@ -65,7 +66,7 @@ export default function Home() {
                   href="/contact"
                   className="inline-flex h-12 items-center justify-center gap-2 bg-primary px-6 text-base font-bold text-primary-foreground transition-colors hover:bg-primary/85"
                 >
-                  Request a quote
+                  Get a Quote
                   <ArrowRight className="size-4" aria-hidden />
                 </Link>
                 <a
@@ -80,7 +81,7 @@ export default function Home() {
 
           <Reveal delay={0.3} className="w-full max-w-md shrink-0 lg:ml-auto">
             <div className="blueprint-grid border border-white/10 bg-white/5 p-6">
-              <p className="label-tag text-primary">Why MintClean Civil</p>
+              <p className="label-tag text-primary">Our Belief</p>
               <ul className="mt-5 flex flex-col gap-5">
                 {trustPoints.map(({ icon: Icon, title, body }) => (
                   <li key={title} className="flex items-start gap-4">
@@ -101,10 +102,15 @@ export default function Home() {
 
       <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
         <Reveal className="max-w-2xl">
-          <p className="label-tag text-accent-foreground">Services</p>
+          <p className="label-tag text-accent-foreground">Our Services</p>
           <h2 className="font-heading mt-3 text-3xl font-extrabold tracking-tight sm:text-4xl">
-            Sitework and grounds infrastructure, start to finish
+            Every outdoor space tells a story.
           </h2>
+          <p className="mt-4 text-[17px] leading-relaxed text-muted-foreground">
+            Our construction specialists bring decades of hands-on experience to every project,
+            working with precision and care to shape environments that stand apart and stand the
+            test of time.
+          </p>
         </Reveal>
         <StaggerGroup className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {serviceLinks.map((s, i) => {
@@ -150,17 +156,18 @@ export default function Home() {
         <Reveal className="mx-auto flex max-w-7xl flex-col items-start gap-6 px-4 py-16 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
           <div>
             <h2 className="font-heading text-2xl font-extrabold tracking-tight sm:text-3xl">
-              Already a MintClean client? Your site crew is one call away.
+              Ready to build something that lasts?
             </h2>
             <p className="mt-2 max-w-xl text-white/70">
-              No new vendor to vet — same office, same accounts team, same standards.
+              We take the time to understand your outdoor vision, then apply our craft to make it
+              real — on time, on budget, and beyond expectation.
             </p>
           </div>
           <Link
             href="/contact"
             className="inline-flex h-12 shrink-0 items-center justify-center gap-2 bg-primary px-6 text-base font-bold text-primary-foreground transition-colors hover:bg-primary/85"
           >
-            Request a quote
+            Get a Quote
             <ArrowRight className="size-4" aria-hidden />
           </Link>
         </Reveal>

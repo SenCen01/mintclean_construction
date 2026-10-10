@@ -8,7 +8,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Request a quote from MintClean Civil Construction — site grading, concrete, asphalt, and drainage for commercial properties and strata across Metro Vancouver.",
+    "Get a quote from MintClean Civil Construction — landscape construction for residential, strata, and commercial properties across BC.",
 };
 
 export default function ContactPage() {
@@ -27,8 +27,8 @@ export default function ContactPage() {
           </Reveal>
           <Reveal delay={0.16}>
             <p className="mt-5 max-w-xl text-lg text-white/75">
-              Already a MintClean client? You don&apos;t need to find a new vendor — just reach out
-              through your usual contact and we&apos;ll loop in the civil team directly.
+              Residential or commercial, a small refresh or a full renovation — tell us about your
+              property and we&apos;ll take it from there.
             </p>
           </Reveal>
         </div>
@@ -38,7 +38,7 @@ export default function ContactPage() {
         <div className="grid gap-12 lg:grid-cols-[1fr_22rem]">
           <Reveal className="border border-border p-6 sm:p-8">
             <p className="label-tag text-accent-foreground">Get a quote</p>
-            <h2 className="font-heading mt-3 text-2xl font-bold">Request a quote</h2>
+            <h2 className="font-heading mt-3 text-2xl font-bold">Get a Quote</h2>
             <p className="mt-2 text-muted-foreground">
               Fill out a few details about the project and we&apos;ll follow up to schedule a site
               visit.
@@ -95,10 +95,15 @@ export default function ContactPage() {
             </div>
 
             <div className="blueprint-grid border border-border bg-secondary p-6">
+              <p className="label-tag text-accent-foreground">Where we work</p>
+              <p className="mt-3 text-sm text-muted-foreground">
+                {site.serviceAreas.join(", ")}.
+              </p>
+            </div>
+
+            <div className="border border-border p-6">
               <p className="text-sm text-muted-foreground">
-                MintClean Civil Construction operates out of MintClean&apos;s Vancouver office and
-                serves the same commercial, strata, and property-management clients MintClean
-                already maintains across Metro Vancouver.
+                MintClean Civil Construction is part of the MintClean family of companies.
               </p>
             </div>
           </Reveal>

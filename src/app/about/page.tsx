@@ -17,44 +17,44 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Why MintClean started a civil construction division, and what being part of the MintClean family means for your site.",
+    "Mint Landscape was founded on a straightforward idea: that every outdoor space deserves to be treated with the same care and skill as the people who live and work in it.",
 };
 
 const trustGrid = [
   {
     icon: Users,
-    title: "One accounts team",
-    body: "The same MintClean contacts your property already works with coordinate your civil work — no new relationship to build.",
-  },
-  {
-    icon: Building2,
-    title: "Same office, same standards",
-    body: `Based out of ${site.address.line1}, ${site.address.city}, alongside the rest of MintClean. One company, one set of service standards.`,
+    title: "A team that listens",
+    body: "We take the time to deeply understand your outdoor vision before any ground gets broken.",
   },
   {
     icon: ShieldCheck,
-    title: "One invoice relationship",
-    body: "Civil work can run through the same billing relationship you already have with MintClean, instead of a separate vendor file.",
+    title: "Honest craft, no shortcuts",
+    body: "We do not cut corners, we do not overstate what we can deliver, and we do not walk away until the work is something we're proud to put our name to.",
   },
   {
     icon: HardHat,
-    title: "Crews that know your site",
-    body: "Our site teams work the same buildings and properties MintClean maintains, so they already understand access, parking, and tenant schedules.",
+    title: "Horticulturists and tradespeople",
+    body: "Our team is experienced horticulturists, skilled tradespeople, and dedicated project managers, united by shared quality standards.",
+  },
+  {
+    icon: Building2,
+    title: "Rooted in British Columbia",
+    body: "Built on craft, honesty, and a genuine love for the land we work with — shaping BC one property at a time.",
   },
 ];
 
-const values = [
+const howWeWork = [
   {
-    title: "Safety first, every site",
-    body: "Every crew operates under a WorkSafeBC-registered safety program, with daily hazard assessments and site-specific traffic control plans where the work affects tenants, residents, or the public.",
+    title: "Real listening",
+    body: "Every project starts with understanding your outdoor vision — not a generic package.",
   },
   {
-    title: "Licensed and insured",
-    body: "MintClean Civil Construction carries commercial general liability coverage and is licensed to operate across Metro Vancouver and the surrounding Lower Mainland.",
+    title: "Honest craft",
+    body: "We do not cut corners, and we do not overstate what we can deliver.",
   },
   {
-    title: "Coordinated, not improvised",
-    body: "For grading and drainage work that requires it, we bring in a licensed BC Land Surveyor and civil engineer of record rather than estimating elevations on-site.",
+    title: "Lasting results",
+    body: "We do not walk away until the work is something we are proud to put our name to.",
   },
 ];
 
@@ -62,9 +62,9 @@ export default function AboutPage() {
   return (
     <>
       <PageHero
-        eyebrow="About MintClean Civil Construction"
-        title="Built by MintClean, for the properties MintClean already maintains."
-        description="We started this division because our commercial and strata clients kept asking us for work our janitorial and building-maintenance crews don't do — grading, concrete, asphalt, and drainage. So MintClean Civil Construction was formed to handle it, under the same roof."
+        eyebrow="About Us"
+        title="Built on craft, honesty, and a genuine love for the land we work with."
+        description="Mint Landscape was founded on a straightforward idea: that every outdoor space deserves to be treated with the same care and skill as the people who live and work in it."
         image={heroImages.about}
       />
 
@@ -74,35 +74,34 @@ export default function AboutPage() {
             <p className="label-tag text-accent-foreground">Our story</p>
             <div className="mt-6 space-y-5 text-[17px] leading-relaxed text-muted-foreground">
               <p>
-                MintClean Building Maintenance has spent years keeping commercial properties and
-                strata buildings across Metro Vancouver clean, maintained, and presentable. Along
-                the way, the same property managers and strata councils kept coming back with the
-                same request: could MintClean also handle the ground-level work — the cracked
-                parking lot, the catch basin that keeps backing up, the retaining wall that needs
-                rebuilding, the lot that needs plowing when a storm closes the city down?
+                Our construction team and in-house horticulturists are driven by a genuine love of
+                design. For them, creating and building isn&apos;t just a job — it&apos;s where their
+                passion finds its fullest expression.
               </p>
               <p>
-                Those jobs needed heavier equipment, different trades, and different crews than
-                indoor maintenance — but the clients asking for them didn&apos;t want to vet,
-                onboard, and manage a brand-new contractor just to get a parking lot repaved.
-                MintClean Civil Construction exists to close that gap: a dedicated sitework and
-                civil construction division, built from the ground up, operating inside the same
-                company our clients already trust.
+                We deliver a comprehensive suite of landscape construction services: from
+                full-scale renovations and new residential builds to commercial developments,
+                public spaces, and strata or multi-family projects.
+              </p>
+              <p>
+                Above all, we are a team that listens. We take the time to deeply understand your
+                outdoor vision, then apply our craft to make it real — on time, on budget, and
+                beyond expectation.
               </p>
             </div>
           </Reveal>
 
           <Reveal delay={0.1}>
             <div className="blueprint-grid h-full border border-border bg-brand-dark p-8 text-white">
-              <p className="label-tag text-primary">New division, established parent</p>
-              <p className="font-heading mt-5 text-2xl leading-snug font-bold">
-                &ldquo;We&apos;re a new division with an established parent.&rdquo;
+              <p className="label-tag text-primary">Our belief</p>
+              <p className="mt-5 text-[15px] leading-relaxed text-white/80">
+                We hold a simple conviction: that the ground beneath your feet should feel as
+                considered as everything above it. Mint Landscape was built on the understanding
+                that great outdoor spaces are not accidents. They are the result of real
+                listening, honest craft, and a deep respect for the land we work with.
               </p>
-              <p className="mt-5 text-[15px] leading-relaxed text-white/70">
-                Our site superintendent brings over a decade of BC heavy-civil and grading
-                experience to the team, and every crew lead is hired specifically for commercial
-                and strata-scale sitework — not residential driveways or large-scale land
-                development.
+              <p className="font-heading mt-5 text-xl leading-snug font-bold">
+                &ldquo;That is what it means to build with Mint.&rdquo;
               </p>
             </div>
           </Reveal>
@@ -112,9 +111,9 @@ export default function AboutPage() {
       <section className="bg-secondary">
         <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 lg:px-8">
           <Reveal>
-            <p className="label-tag text-accent-foreground">What this means for you</p>
+            <p className="label-tag text-accent-foreground">What we believe</p>
             <h2 className="font-heading mt-3 text-2xl font-extrabold tracking-tight sm:text-3xl">
-              What being part of MintClean means for your property
+              What building with Mint means for your property
             </h2>
           </Reveal>
           <StaggerGroup className="mt-10 grid gap-6 sm:grid-cols-2">
@@ -137,10 +136,10 @@ export default function AboutPage() {
 
       <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
         <Reveal>
-          <p className="label-tag text-accent-foreground">Safety and how we work</p>
+          <p className="label-tag text-accent-foreground">How we work</p>
         </Reveal>
         <StaggerGroup className="mt-10 grid divide-y divide-border border-y border-border sm:grid-cols-3 sm:divide-x sm:divide-y-0">
-          {values.map((v, i) => (
+          {howWeWork.map((v, i) => (
             <StaggerItem key={v.title}>
               <div className="flex h-full flex-col gap-3 px-0 py-6 sm:px-8 sm:py-2 sm:first:pl-0">
                 <span className="font-heading text-3xl font-black text-accent">
@@ -154,15 +153,37 @@ export default function AboutPage() {
         </StaggerGroup>
       </section>
 
+      <section className="bg-secondary">
+        <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
+          <Reveal>
+            <p className="label-tag text-accent-foreground">Where we work</p>
+            <h2 className="font-heading mt-3 text-2xl font-extrabold tracking-tight sm:text-3xl">
+              Rooted in British Columbia
+            </h2>
+          </Reveal>
+          <Reveal delay={0.08} className="mt-6 flex flex-wrap gap-3">
+            {site.serviceAreas.map((area) => (
+              <span
+                key={area}
+                className="border border-border bg-background px-4 py-2 text-[15px] font-semibold"
+              >
+                {area}
+              </span>
+            ))}
+          </Reveal>
+        </div>
+      </section>
+
       <section className="blueprint-grid relative overflow-hidden bg-brand-dark text-white">
         <div className="hazard-stripes absolute inset-x-0 top-0 h-1.5" aria-hidden />
         <Reveal className="mx-auto flex max-w-7xl flex-col items-start gap-6 px-4 py-16 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
           <div>
             <h2 className="font-heading text-2xl font-extrabold tracking-tight sm:text-3xl">
-              Already a MintClean client?
+              Ready to start your project?
             </h2>
             <p className="mt-2 max-w-xl text-white/75">
-              Ask your account contact to loop in the civil team, or reach out directly.
+              Tell us about your outdoor space and we&apos;ll start with a conversation, not a sales
+              pitch.
             </p>
           </div>
           <div className="flex shrink-0 flex-col gap-4 sm:flex-row">
@@ -170,7 +191,7 @@ export default function AboutPage() {
               href="/contact"
               className="inline-flex h-12 items-center justify-center gap-2 bg-primary px-6 text-base font-bold text-primary-foreground transition-colors hover:bg-primary/85"
             >
-              Request a quote
+              Get a Quote
               <ArrowRight className="size-4" aria-hidden />
             </Link>
             <a

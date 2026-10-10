@@ -10,7 +10,7 @@ import { servicesData } from "./services-data";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Site grading, concrete, asphalt, drainage, retaining walls, and commercial snow and ice management from MintClean Civil Construction in Metro Vancouver.",
+    "Turf, retaining walls, woodworking, garden beds, natural stone, irrigation and lighting, hardscaping, and custom concrete from MintClean Civil Construction.",
 };
 
 export default function ServicesPage() {
@@ -36,14 +36,14 @@ export default function ServicesPage() {
           </Reveal>
           <Reveal delay={0.08}>
             <h1 className="font-heading mt-5 text-3xl leading-[1.08] font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
-              Sitework and grounds infrastructure, start to finish
+              Every discipline of landscape construction, under one roof
             </h1>
           </Reveal>
           <Reveal delay={0.16}>
             <p className="mt-6 text-lg text-white/75">
-              From the earthwork before a new lot goes in to the plow truck that clears it come
-              winter, MintClean Civil Construction covers the outdoor work MintClean&apos;s
-              maintenance crews don&apos;t.
+              Our construction team and in-house horticulturists are driven by a genuine love of
+              design. We deliver a comprehensive suite of landscape construction services, from
+              full-scale renovations and new residential builds to commercial and strata projects.
             </p>
           </Reveal>
         </div>

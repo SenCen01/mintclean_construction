@@ -1,4 +1,4 @@
-import { CloudSnow, Droplets, Fence, Layers, Mountain, Route } from "lucide-react";
+import { Armchair, Droplets, Fence, Flower2, Hammer, Layers, Mountain, Route, Sprout } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
 export type ServiceDetail = {
@@ -16,129 +16,201 @@ export type ServiceDetail = {
 
 export const servicesData: ServiceDetail[] = [
   {
-    slug: "grading-excavation",
-    label: "Site Grading & Excavation",
-    href: "/services/grading-excavation",
-    icon: Mountain,
+    slug: "turf-and-sod",
+    label: "Turf and Sod",
+    href: "/services/turf-and-sod",
+    icon: Sprout,
     layout: "tiles",
-    shortDescription: "Grading, trenching, and site prep for new construction and redevelopment.",
+    shortDescription:
+      "A well-laid lawn sets the tone for everything around it, prepared and planted to stay lush through every season.",
     metaDescription:
-      "Site grading and excavation for Metro Vancouver commercial properties and redevelopment projects, from MintClean Civil Construction.",
+      "Turf and sod installation across Metro Vancouver, the North Shore, and the Sea to Sky Corridor, from MintClean Civil Construction.",
     intro:
-      "Before anything else gets built, the site has to be moved, cut, and compacted to spec. Our grading and excavation crews handle the earthwork that redevelopment, utility work, and new concrete or asphalt all depend on.",
+      "A well-laid lawn sets the tone for everything around it. We prepare your ground thoroughly and lay premium turf or sod suited to your soil, sun exposure and lifestyle, delivering a result that stays lush through every season.",
     included: [
-      "Rough and finish grading to engineered drawings",
-      "Trenching for utility and drainage lines",
-      "Cut-and-fill earthwork with compaction testing",
-      "Site prep and demolition debris clearing for small commercial lots",
-      "Erosion and sediment control during active earthwork",
+      "Soil preparation, grading, and amendment",
+      "Premium sod selection suited to sun exposure and use",
+      "New lawn installation for residential and commercial sites",
+      "Lawn renovation and overseeding",
+      "Post-installation watering and establishment guidance",
     ],
     whoThisIsFor:
-      "Property managers and developers preparing a site for new paving, a building addition, or a utility upgrade — the same commercial and strata clients MintClean's maintenance crews already serve, now needing work our indoor teams don't do.",
-  },
-  {
-    slug: "concrete",
-    label: "Concrete Flatwork",
-    href: "/services/concrete",
-    icon: Layers,
-    layout: "split",
-    shortDescription: "Sidewalks, curbs, parkade ramps, and equipment pads.",
-    metaDescription:
-      "Commercial concrete flatwork — sidewalks, curbs, parkade ramps, and equipment pads — from MintClean Civil Construction in Metro Vancouver.",
-    intro:
-      "Cracked sidewalks and spalling curbs are a liability as much as an eyesore. We pour and repair the concrete flatwork that keeps a commercial property safe and presentable, from a single curb repair to a full parkade ramp.",
-    included: [
-      "Sidewalks, curbs, and gutters",
-      "Parkade ramps and entry aprons",
-      "Equipment and garbage-enclosure pads",
-      "Control-joint sawcutting and spall repair",
-      "Stamped and broom-finish flatwork for common areas",
-    ],
-    whoThisIsFor:
-      "Strata corporations and commercial building owners dealing with tripping-hazard sidewalks, aging parkade ramps, or a new pad needed for a mechanical unit or garbage enclosure.",
-  },
-  {
-    slug: "asphalt-paving",
-    label: "Asphalt Paving & Patching",
-    href: "/services/asphalt-paving",
-    icon: Route,
-    layout: "tiles",
-    shortDescription: "New lots, resurfacing, and pothole and alligator-crack repair.",
-    metaDescription:
-      "Commercial asphalt paving, resurfacing, and pothole repair for Metro Vancouver parking lots, from MintClean Civil Construction.",
-    intro:
-      "A parking lot is usually the first thing a tenant or customer sees. We pave, patch, and restripe commercial lots so they stay smooth, safe, and accessible-compliant year-round.",
-    included: [
-      "Parking lot resurfacing and overlays",
-      "Pothole and alligator-crack repair",
-      "Line striping and accessible-stall marking",
-      "Speed bump and wheel-stop installation",
-      "Seal coating for lot longevity",
-    ],
-    whoThisIsFor:
-      "Commercial plaza owners and property managers whose lot has gone past the point hand-patching can fix, and strata corporations budgeting for a lot resurface.",
-  },
-  {
-    slug: "drainage",
-    label: "Storm Drainage & Catch Basins",
-    href: "/services/drainage",
-    icon: Droplets,
-    layout: "split",
-    metaDescription:
-      "Catch basin installation, maintenance, and site drainage for Metro Vancouver commercial properties, from MintClean Civil Construction.",
-    shortDescription: "Catch basin install and maintenance, French drains, and grading for runoff.",
-    intro:
-      "Metro Vancouver's rain doesn't forgive poor drainage. We install and maintain the catch basins, French drains, and site grading that keep stormwater off walkways, out of parkades, and away from foundations.",
-    included: [
-      "Catch basin installation and replacement",
-      "Catch basin cleaning and sediment removal",
-      "French drain and perimeter drain installation",
-      "Grading corrections to redirect surface runoff",
-      "Municipal storm connection coordination",
-    ],
-    whoThisIsFor:
-      "Properties with recurring pooling, parkade seepage, or a catch basin that's been flagged during a building envelope or insurance inspection.",
+      "Homeowners starting fresh after a renovation, and strata or commercial properties that need a durable, good-looking lawn put in right the first time.",
   },
   {
     slug: "retaining-walls",
-    label: "Retaining Walls & Site Drainage",
+    label: "Retaining Walls",
     href: "/services/retaining-walls",
     icon: Fence,
     layout: "split",
+    shortDescription:
+      "A well-built retaining wall shapes the character of your landscape while holding ground in place with confidence.",
     metaDescription:
-      "Retaining wall construction and site drainage for sloped commercial properties in Metro Vancouver, from MintClean Civil Construction.",
-    shortDescription: "Segmental and poured retaining structures for sloped and problem sites.",
+      "Retaining wall design and construction for sloped BC properties, from MintClean Civil Construction.",
     intro:
-      "Metro Vancouver's terrain means a lot of commercial sites are built on a slope. We design and build the retaining structures that hold that grade, and the drainage behind them that keeps the wall doing its job for decades.",
+      "Beyond holding ground in place, a well-built retaining wall shapes the character of your landscape. We construct walls that carry their load with confidence while adding a sense of order and permanence to your outdoor environment.",
     included: [
-      "Segmental block retaining walls",
-      "Poured concrete retaining structures",
-      "Geogrid-reinforced walls for taller grade changes",
-      "Backfill drainage and weep-hole systems",
-      "Coordination with a geotechnical engineer on larger or structural walls",
+      "Segmental block and natural stone retaining walls",
+      "Gabion wall construction",
+      "Tiered walls for sloped and terraced properties",
+      "Backfill drainage and weep systems",
+      "Engineering coordination on taller or structural walls",
     ],
     whoThisIsFor:
-      "Properties with a failing or leaning wall, a slope that's eroding onto a walkway or parking area, or a redevelopment that needs a new grade change held back.",
+      "Properties with a slope that needs shaping, an aging wall that needs rebuilding, or a design that calls for a wall as a landscape feature, not just a function.",
   },
   {
-    slug: "snow-ice-management",
-    label: "Commercial Snow & Ice Management",
-    href: "/services/snow-ice-management",
-    icon: CloudSnow,
+    slug: "woodworking",
+    label: "Woodworking",
+    href: "/services/woodworking",
+    icon: Hammer,
     layout: "tiles",
+    shortDescription:
+      "Pergolas, decks, trellises and custom fencing, built with quality timber selected to perform outdoors.",
     metaDescription:
-      "Plow trucks and bulk de-icing contracts for large commercial parking lots in Metro Vancouver, from MintClean Civil Construction.",
-    shortDescription: "Plow trucks, de-icing, and seasonal contracts for lots too large for hand crews.",
+      "Custom outdoor woodworking — pergolas, decks, and fencing — from MintClean Civil Construction in BC.",
     intro:
-      "MintClean's hand crews already clear sidewalks and entrances across Metro Vancouver every winter. This is the heavier end of that same job: plow trucks and bulk de-icing for lots that are simply too big to clear by hand.",
+      "From pergolas and privacy screens to decks, trellises and custom fencing, our craftsmen work with quality timber selected to perform outdoors. Every structure we build is designed to feel at home in its setting for years to come.",
     included: [
-      "Seasonal plow-truck contracts for large parking lots",
-      "Bulk salt and liquid de-icing application",
-      "Priority response for fire lanes and accessible routes",
-      "24/7 storm monitoring and callout during active snowfall",
-      "Coordination with MintClean's hand crews for entrances and walkways on the same site",
+      "Pergolas and shade structures",
+      "Decks and raised platforms",
+      "Privacy screens and trellises",
+      "Custom fencing and gates",
+      "Timber selection and finishing for BC's climate",
     ],
     whoThisIsFor:
-      "Commercial plazas, large strata developments, and multi-building sites where a hand crew can clear the sidewalks but the lot itself needs a truck — a natural add-on for properties already on a MintClean snow removal contract.",
+      "Homeowners and property managers wanting a built structure — shade, privacy, or definition — that's made to last outdoors, not assembled from a kit.",
+  },
+  {
+    slug: "garden-beds",
+    label: "Garden Beds",
+    href: "/services/garden-beds",
+    icon: Flower2,
+    layout: "split",
+    shortDescription:
+      "Thoughtfully planned garden beds that transform a yard, from perennial borders to raised kitchen gardens.",
+    metaDescription:
+      "Garden bed design, construction, and planting across Metro Vancouver, from MintClean Civil Construction.",
+    intro:
+      "Thoughtfully planned garden beds can transform even a modest yard into something memorable. We build and plant to suit your aesthetic, from layered perennial borders to raised kitchen gardens, using soil mixes and practices that keep things thriving long after installation.",
+    included: [
+      "Garden bed layout and construction",
+      "Raised bed and kitchen garden builds",
+      "Perennial border design and planting",
+      "Soil mix selection for long-term plant health",
+      "Seasonal planting plans",
+    ],
+    whoThisIsFor:
+      "Homeowners who want a yard that feels designed, not default, and strata or commercial properties looking to upgrade their curb appeal.",
+  },
+  {
+    slug: "natural-stone",
+    label: "Natural Stone",
+    href: "/services/natural-stone",
+    icon: Mountain,
+    layout: "tiles",
+    shortDescription:
+      "Carefully selected stone for patios, pathways, steps and garden accents, fitted with precision.",
+    metaDescription:
+      "Natural stone patios, pathways, and garden features installed across BC, from MintClean Civil Construction.",
+    intro:
+      "Few materials age as gracefully as natural stone. We source and install carefully selected stone for patios, pathways, steps and garden accents, fitting each piece with precision so the result feels as though it has always belonged there.",
+    included: [
+      "Natural stone patios and terraces",
+      "Stepping-stone and flagstone pathways",
+      "Stone garden steps and accents",
+      "Dry-stack and mortared stonework",
+      "Stone sourcing and material matching",
+    ],
+    whoThisIsFor:
+      "Properties where a built surface needs to look like it belongs to the landscape, not sit on top of it — a common ask on higher-end residential and public-space projects.",
+  },
+  {
+    slug: "irrigation-and-lighting",
+    label: "Irrigation and Lighting",
+    href: "/services/irrigation-and-lighting",
+    icon: Droplets,
+    layout: "split",
+    shortDescription:
+      "Efficient, reliable irrigation and lighting systems that keep your landscape hydrated and looking good after dark.",
+    metaDescription:
+      "Landscape irrigation and lighting design and installation from MintClean Civil Construction, serving BC.",
+    intro:
+      "A landscape that performs well after dark and stays hydrated without waste is a landscape that endures. We design and install irrigation and lighting systems that are efficient, reliable and genuinely enhance how your property looks and functions around the clock.",
+    included: [
+      "Irrigation system design and installation",
+      "Zone-based drip and spray irrigation",
+      "Landscape and accent lighting",
+      "Smart controller setup and water-use scheduling",
+      "Seasonal system start-up and winterization",
+    ],
+    whoThisIsFor:
+      "Properties that want a lower-maintenance landscape — one that waters itself efficiently and looks intentional from dusk through nightfall.",
+  },
+  {
+    slug: "pathways-patios-driveways",
+    label: "Pathways, Patios and Driveways",
+    href: "/services/pathways-patios-driveways",
+    icon: Route,
+    layout: "tiles",
+    shortDescription:
+      "Outdoor surfaces that hold up to daily use and look great doing it, matched to your property and habits.",
+    metaDescription:
+      "Pathway, patio, and driveway construction across BC, from MintClean Civil Construction.",
+    intro:
+      "We design and build outdoor surfaces that hold up to daily use and look great doing it. Working closely with you, we select materials and layouts that suit your property, your habits and the surrounding environment for a result that feels complete.",
+    included: [
+      "Paver and concrete driveways",
+      "Walkways and entry pathways",
+      "Patios sized and laid out for how you actually use them",
+      "Material and pattern selection",
+      "Grading and drainage integration",
+    ],
+    whoThisIsFor:
+      "Anyone replacing a worn or undersized surface, or planning a new one as part of a larger landscape build.",
+  },
+  {
+    slug: "site-furnishings",
+    label: "Site Furnishings",
+    href: "/services/site-furnishings",
+    icon: Armchair,
+    layout: "split",
+    shortDescription:
+      "Benches, planters, tables and play elements, sourced and installed to complement your landscape.",
+    metaDescription:
+      "Outdoor site furnishings sourcing and installation from MintClean Civil Construction, serving BC properties.",
+    intro:
+      "The right outdoor fixtures turn a yard into a place people actually want to spend time. We source and install benches, planters, tables and play elements that are built for outdoor conditions and placed to complement everything around them.",
+    included: [
+      "Bench and seating installation",
+      "Planters and raised containers",
+      "Outdoor tables and gathering areas",
+      "Play structures and site amenities",
+      "Placement planning as part of a broader design",
+    ],
+    whoThisIsFor:
+      "Residential, strata, and public-space projects where the finishing touches — not just the hardscape — make the space work.",
+  },
+  {
+    slug: "architectural-concrete",
+    label: "Architectural Concrete Features",
+    href: "/services/architectural-concrete",
+    icon: Layers,
+    layout: "tiles",
+    shortDescription:
+      "Custom concrete elements — sculpted pathways, statement patios, textured accent walls — poured with confidence.",
+    metaDescription:
+      "Custom architectural concrete features for landscapes across BC, from MintClean Civil Construction.",
+    intro:
+      "Concrete done well has a confidence that few materials can match. Our team designs and pours custom concrete elements, from sculpted pathways and statement patios to textured accent walls, tailored to the specific character of your space.",
+    included: [
+      "Custom-poured patios and pathways",
+      "Textured and stamped concrete finishes",
+      "Architectural accent walls",
+      "Integrated colour and finish options",
+      "Design coordination with the rest of your landscape build",
+    ],
+    whoThisIsFor:
+      "Projects where a standard paver or stone surface isn't the right fit, and a custom-poured feature is.",
   },
 ];

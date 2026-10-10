@@ -66,7 +66,7 @@ function MobileMenu({ pathname }: { pathname: string }) {
               render={<Link href="/contact" />}
               className={cn(buttonVariants({ size: "lg" }), "w-full py-5 text-base")}
             >
-              Request a quote
+              Get a Quote
             </SheetClose>
           </div>
         </div>
@@ -111,7 +111,7 @@ export function SiteHeader() {
             {site.phone}
           </a>
           <Link href="/contact" className={buttonVariants()}>
-            Request a quote
+            Get a Quote
           </Link>
         </div>
 

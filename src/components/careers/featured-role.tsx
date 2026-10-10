@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { IconTile } from "@/components/icon-tile";
+import { site } from "@/lib/site";
 import type { LucideIcon } from "lucide-react";
 
 export function FeaturedRole({
@@ -16,7 +17,7 @@ export function FeaturedRole({
   summary: string;
   image: { src: string; alt: string };
 }) {
-  const mailto = `mailto:careers@mintclean.ca?subject=${encodeURIComponent(
+  const mailto = `mailto:${site.email}?subject=${encodeURIComponent(
     `Application - ${title}`,
   )}`;
 
