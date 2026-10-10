@@ -156,3 +156,38 @@
     var(--brand-dark) 28px
   );
 }
+
+/* Faint blueprint-grid texture for dark bands — reads as "survey/plan" rather
+   than decorative noise. Keep opacity low; this is a texture, not a pattern. */
+.blueprint-grid {
+  background-image:
+    linear-gradient(to right, oklch(1 0 0 / 6%) 1px, transparent 1px),
+    linear-gradient(to bottom, oklch(1 0 0 / 6%) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Angled section edge — an asymmetric cut instead of a plain rectangle,
+   used sparingly at major section transitions (hero-to-content, etc). */
+.cut-corner-br {
+  clip-path: polygon(0 0, 100% 0, 100% 88%, 92% 100%, 0 100%);
+}
+
+/* Eyebrow / kicker label — small tracked caps used above headings, styled
+   like a technical spec tag rather than a soft marketing pill. */
+.label-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.label-tag::before {
+  content: "";
+  width: 1.5rem;
+  height: 2px;
+  background: currentColor;
+  display: inline-block;
+}
