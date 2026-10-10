@@ -31,7 +31,7 @@ export function ContactForm() {
         </IconTile>
         <h2 className="font-heading text-xl font-bold">Thanks — we&apos;ll follow up shortly.</h2>
         <p className="text-muted-foreground">
-          A member of the MintClean team will be in touch to discuss your property.
+          A member of the Mint team will be in touch to discuss your property.
         </p>
       </div>
     );

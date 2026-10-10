@@ -1,14 +1,15 @@
 export const site = {
-  name: "MintClean Civil Construction",
-  shortName: "MintClean Civil",
-  legalName: "MintClean Civil Construction, operated by Mint Group Landscaping & Maintenance Inc.",
+  name: "Mint Civil Construction",
+  shortName: "Mint Civil",
+  legalName: "Mint Civil Construction, operated by Mint Group Landscaping & Maintenance Inc.",
   tagline: "We craft spaces that endure.",
   description:
     "Skilled across every discipline of landscape construction, we bring vision, depth, and permanence to your property — serving Vancouver, the North Shore, and the Sea to Sky Corridor.",
   mission: "Shaping BC one property at a time.",
   phone: "672-336-2753",
   phoneHref: "tel:+16723362753",
-  email: "info@mintlandscape.ca",
+  // Placeholder — real domain/email to be confirmed before launch.
+  email: "info@placeholder.com",
   address: {
     line1: "9780 197B St, Unit #201",
     city: "Langley Township, BC",
@@ -99,8 +100,7 @@ export const headerNav = [
 ];
 
 export const companyLinks = [
-  { label: "About MintClean Civil", href: "/about" },
+  { label: "About Mint Civil", href: "/about" },
   { label: "Our Projects", href: "/projects" },
-  { label: "MintClean Building Maintenance", href: "https://mintclean.ca" },
   { label: "Careers", href: "/careers" },
 ];

@@ -45,7 +45,7 @@ export default function Home() {
         <div className="relative mx-auto flex max-w-7xl flex-col gap-10 px-4 py-24 sm:px-6 lg:flex-row lg:items-center lg:gap-16 lg:py-32 lg:px-8">
           <div className="max-w-2xl">
             <Reveal>
-              <p className="label-tag text-primary">A MintClean company</p>
+              <p className="label-tag text-primary">A Mint company</p>
             </Reveal>
             <Reveal delay={0.08}>
               <h1 className="font-heading mt-5 text-4xl leading-[1.03] font-extrabold tracking-tight sm:text-5xl lg:text-6xl">

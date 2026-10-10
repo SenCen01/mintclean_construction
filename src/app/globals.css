@@ -57,7 +57,7 @@
   --card-foreground: oklch(0.2 0.01 260);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.2 0.01 260);
-  /* MintClean's own mint green, unchanged hue — this is a branch of MintClean, not a
+  /* Mint's own mint green, unchanged hue — this is a branch of Mint, not a
      disconnected brand, so the primary color must read as family at a glance. */
   --primary: oklch(0.6 0.135 165);
   --primary-foreground: oklch(0.98 0.005 165);
@@ -90,7 +90,7 @@
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
   /* Steel/graphite — the dark surface used for header, footer, and hero bands.
-     Distinct from MintClean's own dark surface; this is where the industrial
+     Distinct from Mint's own dark surface; this is where the industrial
      differentiation lives, not in the brand color. */
   --brand-dark: oklch(0.2 0.012 258);
   /* Same value as --primary, kept as a named alias for tints/gradients that want

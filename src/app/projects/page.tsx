@@ -13,7 +13,7 @@ import { servicesData } from "@/app/services/services-data";
 export const metadata: Metadata = {
   title: "Projects",
   description:
-    "Residential renovations, new builds, and commercial and strata landscape construction projects from MintClean Civil Construction across BC.",
+    "Residential renovations, new builds, and commercial and strata landscape construction projects from Mint Civil Construction across BC.",
 };
 
 const tiers = [

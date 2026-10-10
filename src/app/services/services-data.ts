@@ -24,7 +24,7 @@ export const servicesData: ServiceDetail[] = [
     shortDescription:
       "A well-laid lawn sets the tone for everything around it, prepared and planted to stay lush through every season.",
     metaDescription:
-      "Turf and sod installation across Metro Vancouver, the North Shore, and the Sea to Sky Corridor, from MintClean Civil Construction.",
+      "Turf and sod installation across Metro Vancouver, the North Shore, and the Sea to Sky Corridor, from Mint Civil Construction.",
     intro:
       "A well-laid lawn sets the tone for everything around it. We prepare your ground thoroughly and lay premium turf or sod suited to your soil, sun exposure and lifestyle, delivering a result that stays lush through every season.",
     included: [
@@ -46,7 +46,7 @@ export const servicesData: ServiceDetail[] = [
     shortDescription:
       "A well-built retaining wall shapes the character of your landscape while holding ground in place with confidence.",
     metaDescription:
-      "Retaining wall design and construction for sloped BC properties, from MintClean Civil Construction.",
+      "Retaining wall design and construction for sloped BC properties, from Mint Civil Construction.",
     intro:
       "Beyond holding ground in place, a well-built retaining wall shapes the character of your landscape. We construct walls that carry their load with confidence while adding a sense of order and permanence to your outdoor environment.",
     included: [
@@ -68,7 +68,7 @@ export const servicesData: ServiceDetail[] = [
     shortDescription:
       "Pergolas, decks, trellises and custom fencing, built with quality timber selected to perform outdoors.",
     metaDescription:
-      "Custom outdoor woodworking — pergolas, decks, and fencing — from MintClean Civil Construction in BC.",
+      "Custom outdoor woodworking — pergolas, decks, and fencing — from Mint Civil Construction in BC.",
     intro:
       "From pergolas and privacy screens to decks, trellises and custom fencing, our craftsmen work with quality timber selected to perform outdoors. Every structure we build is designed to feel at home in its setting for years to come.",
     included: [
@@ -90,7 +90,7 @@ export const servicesData: ServiceDetail[] = [
     shortDescription:
       "Thoughtfully planned garden beds that transform a yard, from perennial borders to raised kitchen gardens.",
     metaDescription:
-      "Garden bed design, construction, and planting across Metro Vancouver, from MintClean Civil Construction.",
+      "Garden bed design, construction, and planting across Metro Vancouver, from Mint Civil Construction.",
     intro:
       "Thoughtfully planned garden beds can transform even a modest yard into something memorable. We build and plant to suit your aesthetic, from layered perennial borders to raised kitchen gardens, using soil mixes and practices that keep things thriving long after installation.",
     included: [
@@ -112,7 +112,7 @@ export const servicesData: ServiceDetail[] = [
     shortDescription:
       "Carefully selected stone for patios, pathways, steps and garden accents, fitted with precision.",
     metaDescription:
-      "Natural stone patios, pathways, and garden features installed across BC, from MintClean Civil Construction.",
+      "Natural stone patios, pathways, and garden features installed across BC, from Mint Civil Construction.",
     intro:
       "Few materials age as gracefully as natural stone. We source and install carefully selected stone for patios, pathways, steps and garden accents, fitting each piece with precision so the result feels as though it has always belonged there.",
     included: [
@@ -134,7 +134,7 @@ export const servicesData: ServiceDetail[] = [
     shortDescription:
       "Efficient, reliable irrigation and lighting systems that keep your landscape hydrated and looking good after dark.",
     metaDescription:
-      "Landscape irrigation and lighting design and installation from MintClean Civil Construction, serving BC.",
+      "Landscape irrigation and lighting design and installation from Mint Civil Construction, serving BC.",
     intro:
       "A landscape that performs well after dark and stays hydrated without waste is a landscape that endures. We design and install irrigation and lighting systems that are efficient, reliable and genuinely enhance how your property looks and functions around the clock.",
     included: [
@@ -156,7 +156,7 @@ export const servicesData: ServiceDetail[] = [
     shortDescription:
       "Outdoor surfaces that hold up to daily use and look great doing it, matched to your property and habits.",
     metaDescription:
-      "Pathway, patio, and driveway construction across BC, from MintClean Civil Construction.",
+      "Pathway, patio, and driveway construction across BC, from Mint Civil Construction.",
     intro:
       "We design and build outdoor surfaces that hold up to daily use and look great doing it. Working closely with you, we select materials and layouts that suit your property, your habits and the surrounding environment for a result that feels complete.",
     included: [
@@ -178,7 +178,7 @@ export const servicesData: ServiceDetail[] = [
     shortDescription:
       "Benches, planters, tables and play elements, sourced and installed to complement your landscape.",
     metaDescription:
-      "Outdoor site furnishings sourcing and installation from MintClean Civil Construction, serving BC properties.",
+      "Outdoor site furnishings sourcing and installation from Mint Civil Construction, serving BC properties.",
     intro:
       "The right outdoor fixtures turn a yard into a place people actually want to spend time. We source and install benches, planters, tables and play elements that are built for outdoor conditions and placed to complement everything around them.",
     included: [
@@ -200,7 +200,7 @@ export const servicesData: ServiceDetail[] = [
     shortDescription:
       "Custom concrete elements — sculpted pathways, statement patios, textured accent walls — poured with confidence.",
     metaDescription:
-      "Custom architectural concrete features for landscapes across BC, from MintClean Civil Construction.",
+      "Custom architectural concrete features for landscapes across BC, from Mint Civil Construction.",
     intro:
       "Concrete done well has a confidence that few materials can match. Our team designs and pours custom concrete elements, from sculpted pathways and statement patios to textured accent walls, tailored to the specific character of your space.",
     included: [

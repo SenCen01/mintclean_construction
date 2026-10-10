@@ -8,7 +8,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Get a quote from MintClean Civil Construction — landscape construction for residential, strata, and commercial properties across BC.",
+    "Get a quote from Mint Civil Construction — landscape construction for residential, strata, and commercial properties across BC.",
 };
 
 export default function ContactPage() {
@@ -101,11 +101,6 @@ export default function ContactPage() {
               </p>
             </div>
 
-            <div className="border border-border p-6">
-              <p className="text-sm text-muted-foreground">
-                MintClean Civil Construction is part of the MintClean family of companies.
-              </p>
-            </div>
           </Reveal>
         </div>
       </section>

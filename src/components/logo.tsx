@@ -11,11 +11,10 @@ export function Logo({
     <span className={cn("inline-flex shrink-0 flex-col self-start leading-none", className)}>
       <span
         className={cn(
-          "font-heading text-[1.6em] font-extrabold tracking-tight",
-          tone === "dark" ? "text-white" : "text-foreground",
+          "font-heading text-[1.6em] font-extrabold tracking-tight text-primary",
         )}
       >
-        Mint<span className="text-primary">Clean</span>
+        Mint
       </span>
       <span
         className={cn(

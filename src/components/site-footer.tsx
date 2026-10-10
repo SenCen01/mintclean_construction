@@ -100,13 +100,6 @@ export function SiteFooter() {
 
         <div className="flex flex-col gap-3 border-t border-white/10 pt-6 text-sm text-white/60 sm:flex-row sm:items-center sm:justify-between">
           <p>&copy; 2026 {site.legalName}</p>
-          <p>
-            Proudly part of the{" "}
-            <a href="https://mintclean.ca" className="font-semibold text-primary hover:underline">
-              MintClean
-            </a>{" "}
-            family of companies.
-          </p>
         </div>
       </div>
     </footer>

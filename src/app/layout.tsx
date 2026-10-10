@@ -22,8 +22,8 @@ const archivo = Archivo({
 
 export const metadata: Metadata = {
   title: {
-    default: "MintClean Civil Construction | Landscape Construction in BC",
-    template: "%s | MintClean Civil Construction",
+    default: "Mint Civil Construction | Landscape Construction in BC",
+    template: "%s | Mint Civil Construction",
   },
   description:
     "Skilled across every discipline of landscape construction — turf, retaining walls, woodworking, natural stone, irrigation, and more — serving Vancouver, the North Shore, and the Sea to Sky Corridor.",

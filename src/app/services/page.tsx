@@ -10,7 +10,7 @@ import { servicesData } from "./services-data";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Turf, retaining walls, woodworking, garden beds, natural stone, irrigation and lighting, hardscaping, and custom concrete from MintClean Civil Construction.",
+    "Turf, retaining walls, woodworking, garden beds, natural stone, irrigation and lighting, hardscaping, and custom concrete from Mint Civil Construction.",
 };
 
 export default function ServicesPage() {
