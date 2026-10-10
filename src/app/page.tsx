@@ -35,10 +35,10 @@ export default function Home() {
           priority
           sizes="100vw"
           className="absolute inset-0"
-          imageClassName="opacity-45"
+          imageClassName="opacity-90"
         />
         <div
-          className="absolute inset-0 bg-gradient-to-r from-brand-dark via-brand-dark/90 to-brand-dark/40"
+          className="absolute inset-0 bg-gradient-to-r from-brand-dark/95 via-brand-dark/55 to-brand-dark/15"
           aria-hidden
         />
         <div className="hazard-stripes absolute inset-x-0 bottom-0 h-1.5" aria-hidden />
@@ -80,7 +80,7 @@ export default function Home() {
           </div>
 
           <Reveal delay={0.3} className="w-full max-w-md shrink-0 lg:ml-auto">
-            <div className="blueprint-grid border border-white/10 bg-white/5 p-6">
+            <div className="blueprint-grid border border-white/10 bg-brand-dark/80 p-6 backdrop-blur-sm">
               <p className="label-tag text-primary">Our Belief</p>
               <ul className="mt-5 flex flex-col gap-5">
                 {trustPoints.map(({ icon: Icon, title, body }) => (
