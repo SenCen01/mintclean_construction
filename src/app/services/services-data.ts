@@ -1,3 +1,6 @@
+import { CloudSnow, Droplets, Fence, Layers, Mountain, Route } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
+
 export type ServiceDetail = {
   slug: string;
   label: string;
@@ -7,6 +10,8 @@ export type ServiceDetail = {
   intro: string;
   included: string[];
   whoThisIsFor: string;
+  icon: LucideIcon;
+  layout: "tiles" | "split";
 };
 
 export const servicesData: ServiceDetail[] = [
@@ -14,6 +19,8 @@ export const servicesData: ServiceDetail[] = [
     slug: "grading-excavation",
     label: "Site Grading & Excavation",
     href: "/services/grading-excavation",
+    icon: Mountain,
+    layout: "tiles",
     shortDescription: "Grading, trenching, and site prep for new construction and redevelopment.",
     metaDescription:
       "Site grading and excavation for Metro Vancouver commercial properties and redevelopment projects, from MintClean Civil Construction.",
@@ -33,6 +40,8 @@ export const servicesData: ServiceDetail[] = [
     slug: "concrete",
     label: "Concrete Flatwork",
     href: "/services/concrete",
+    icon: Layers,
+    layout: "split",
     shortDescription: "Sidewalks, curbs, parkade ramps, and equipment pads.",
     metaDescription:
       "Commercial concrete flatwork — sidewalks, curbs, parkade ramps, and equipment pads — from MintClean Civil Construction in Metro Vancouver.",
@@ -52,6 +61,8 @@ export const servicesData: ServiceDetail[] = [
     slug: "asphalt-paving",
     label: "Asphalt Paving & Patching",
     href: "/services/asphalt-paving",
+    icon: Route,
+    layout: "tiles",
     shortDescription: "New lots, resurfacing, and pothole and alligator-crack repair.",
     metaDescription:
       "Commercial asphalt paving, resurfacing, and pothole repair for Metro Vancouver parking lots, from MintClean Civil Construction.",
@@ -71,6 +82,8 @@ export const servicesData: ServiceDetail[] = [
     slug: "drainage",
     label: "Storm Drainage & Catch Basins",
     href: "/services/drainage",
+    icon: Droplets,
+    layout: "split",
     metaDescription:
       "Catch basin installation, maintenance, and site drainage for Metro Vancouver commercial properties, from MintClean Civil Construction.",
     shortDescription: "Catch basin install and maintenance, French drains, and grading for runoff.",
@@ -90,6 +103,8 @@ export const servicesData: ServiceDetail[] = [
     slug: "retaining-walls",
     label: "Retaining Walls & Site Drainage",
     href: "/services/retaining-walls",
+    icon: Fence,
+    layout: "split",
     metaDescription:
       "Retaining wall construction and site drainage for sloped commercial properties in Metro Vancouver, from MintClean Civil Construction.",
     shortDescription: "Segmental and poured retaining structures for sloped and problem sites.",
@@ -109,6 +124,8 @@ export const servicesData: ServiceDetail[] = [
     slug: "snow-ice-management",
     label: "Commercial Snow & Ice Management",
     href: "/services/snow-ice-management",
+    icon: CloudSnow,
+    layout: "tiles",
     metaDescription:
       "Plow trucks and bulk de-icing contracts for large commercial parking lots in Metro Vancouver, from MintClean Civil Construction.",
     shortDescription: "Plow trucks, de-icing, and seasonal contracts for lots too large for hand crews.",

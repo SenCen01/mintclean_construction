@@ -2,6 +2,7 @@
 
 import { useState, type FormEvent } from "react";
 import { CheckCircle2 } from "lucide-react";
+import { IconTile } from "@/components/icon-tile";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -25,8 +26,10 @@ export function ContactForm() {
 
   if (submitted) {
     return (
-      <div className="flex flex-col items-start gap-3 rounded-sm border border-border bg-secondary p-8">
-        <CheckCircle2 className="size-8 text-primary" aria-hidden />
+      <div className="flex flex-col items-start gap-4 border border-border bg-secondary p-8">
+        <IconTile tone="primary">
+          <CheckCircle2 className="size-5" aria-hidden />
+        </IconTile>
         <h2 className="font-heading text-xl font-bold">Thanks — we&apos;ll follow up shortly.</h2>
         <p className="text-muted-foreground">
           A member of the MintClean Civil team will be in touch to discuss your project.

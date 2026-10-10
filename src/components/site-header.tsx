@@ -36,7 +36,7 @@ function MobileMenu({ pathname }: { pathname: string }) {
       </SheetTrigger>
       <SheetContent side="right" showCloseButton={false} className="w-full border-0 p-0 sm:max-w-none">
         <SheetTitle className="sr-only">Main menu</SheetTitle>
-        <div className="flex h-full flex-col bg-brand-dark px-6 pb-8 text-white">
+        <div className="blueprint-grid flex h-full flex-col bg-brand-dark px-6 pb-8 text-white">
           <div className="flex h-20 items-center justify-between border-b border-white/10">
             <Logo tone="dark" className="h-10" />
             <SheetClose

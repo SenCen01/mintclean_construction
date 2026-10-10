@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
-import { CalendarCheck, MapPin, ShieldCheck } from "lucide-react";
+import { CalendarCheck, HardHat, MapPin, ShieldCheck } from "lucide-react";
 import { PageHero } from "@/components/about/page-hero";
+import { FeaturedRole } from "@/components/careers/featured-role";
 import { RoleCard } from "@/components/careers/role-card";
+import { IconTile } from "@/components/icon-tile";
+import { Reveal, StaggerGroup, StaggerItem } from "@/components/motion/reveal";
+import { heroImages, serviceImages } from "@/lib/images";
 
 export const metadata: Metadata = {
   title: "Careers",
@@ -28,12 +32,6 @@ const whyUs = [
 ];
 
 const roles = [
-  {
-    title: "Equipment Operator",
-    type: "Full-time",
-    summary:
-      "Excavator, skid steer, and compact loader operation for grading, trenching, and site-prep work.",
-  },
   {
     title: "Concrete Finisher",
     type: "Full-time",
@@ -63,30 +61,50 @@ export default function CareersPage() {
         eyebrow="Careers"
         title="Build the ground floor of a new MintClean division."
         description="We're hiring field crews for commercial and strata sitework across Metro Vancouver — backed by the stability of an established company."
+        image={heroImages.careers}
       />
 
-      <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
-        <div className="grid gap-8 sm:grid-cols-3">
+      <section className="mx-auto max-w-6xl px-4 py-20 sm:px-6 lg:px-8">
+        <StaggerGroup className="grid gap-8 sm:grid-cols-3">
           {whyUs.map(({ icon: Icon, title, body }) => (
-            <div key={title}>
-              <Icon className="size-6 text-primary" aria-hidden />
-              <h2 className="font-heading mt-3 font-bold">{title}</h2>
+            <StaggerItem key={title}>
+              <IconTile tone="primary">
+                <Icon className="size-5" aria-hidden />
+              </IconTile>
+              <h2 className="font-heading mt-4 font-bold">{title}</h2>
               <p className="mt-1.5 text-[15px] text-muted-foreground">{body}</p>
-            </div>
+            </StaggerItem>
           ))}
-        </div>
+        </StaggerGroup>
       </section>
 
       <section className="bg-secondary">
-        <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
-          <h2 className="font-heading text-2xl font-extrabold tracking-tight sm:text-3xl">
-            Open roles
-          </h2>
-          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 lg:px-8">
+          <Reveal>
+            <p className="label-tag text-accent-foreground">Open roles</p>
+            <h2 className="font-heading mt-3 text-2xl font-extrabold tracking-tight sm:text-3xl">
+              Field positions hiring now
+            </h2>
+          </Reveal>
+
+          <Reveal delay={0.1} className="mt-10">
+            <FeaturedRole
+              icon={HardHat}
+              title="Equipment Operator"
+              type="Full-time — featured"
+              summary="Excavator, skid steer, and compact loader operation for grading, trenching, and site-prep work across Metro Vancouver commercial sites."
+              image={serviceImages["grading-excavation"]}
+            />
+          </Reveal>
+
+          <StaggerGroup className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {roles.map((r) => (
-              <RoleCard key={r.title} {...r} />
+              <StaggerItem key={r.title}>
+                <RoleCard {...r} />
+              </StaggerItem>
             ))}
-          </div>
+          </StaggerGroup>
+
           <p className="mt-10 text-[15px] text-muted-foreground">
             Don&apos;t see a fit?{" "}
             <a
